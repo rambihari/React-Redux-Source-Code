@@ -23,7 +23,7 @@ This repo contains the unminifed Front-End Source code relating to https://githu
 
 # Build react-redux-SourceCode
 
-From the root directory, run npm run build in the command line
+From the root directory, run command npm run build in the command line
 Open http://localhost:3000 in your browser, and voilà.
 
 # Development
