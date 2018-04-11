@@ -1,4 +1,4 @@
-# react-redux-SourceCode
+# React-Redux-SourceCode
 This repo contains the unminifed Front-End Source code relating to https://github.com/rambihari/react-redux-jersey-spring-hibernate-intergration 
 
 * * *
