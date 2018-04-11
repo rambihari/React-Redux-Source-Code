@@ -1,6 +1,6 @@
+//This component renders the navigation bar which provides links in order to navigate between diffrent react components
 import React from 'react';
 import {Link, IndexLink} from 'react-router';
-
 
 const Header = () => {
   return (
@@ -11,8 +11,9 @@ const Header = () => {
         </div>
         <ul className="nav navbar-nav">
           <li activeClassName="active"><IndexLink to="/">Home Page</IndexLink></li>
-          <li activeClassName="active"><Link to="addChild">Add Child</Link></li>
           <li activeClassName="active"><Link to="listChild">List Children</Link></li>
+          <li activeClassName="active"><Link to="addChild">Add Child</Link></li>
+          <li activeClassName="active"><Link to="ProfileSelect">Profiles</Link></li>
         </ul>
       </div>
     </nav>

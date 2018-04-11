@@ -8,9 +8,11 @@ import configureStore from './store/storeConfigure';
 import {Provider} from 'react-redux';
 import {loadAllChildren} from './actions/childActions';
 import routes from './routes';
+import './MyStyles.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/toastr/build/toastr.min.css';
 
+//Initializing the store for use
 const store = configureStore();
 
 render(

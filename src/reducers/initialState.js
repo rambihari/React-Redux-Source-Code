@@ -1,4 +1,4 @@
-
 export default {
-  child: []
+  child: [],
+  profile: []
 };

@@ -1,5 +1,8 @@
 import webpack from 'webpack';
 import path from 'path';
+// only the css
+import { styles } from 'react-select';
+
 
 export default {
   debug: true,

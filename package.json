@@ -1,7 +1,6 @@
 {
-  "name": "pluralsight-redux-starter",
+  "name": "react-redux-jersey-springboot-hibernate-intergration",
   "version": "1.0.0",
-  "description": "Starter kit for React and Redux Pluralsight course by Cory House",
   "scripts": {
     "prestart": "babel-node tools/startMessage.js",
     "start": "npm-run-all --parallel test:watch open:src lint:watch",
@@ -9,11 +8,18 @@
     "lint": "node_modules/.bin/esw webpack.config.* src tools",
     "lint:watch": "npm run lint -- --watch",
     "test": "mocha --reporter progress tools/testSetup.js \"src/**/*.test.js\"",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "clean-dist": "npm run remove-dist && mkdir dist",
+    "remove-dist": "node_modules/.bin/rimraf ./dist",
+    "build:html": "babel-node tools/buildHtml.js",
+    "prebuild": "npm-run-all clean-dist build:html",
+    "build": "babel-node tools/build.js && cp -r ./dist/* ../MyProj/src/main/resources/static",
+    "postbuild": "babel-node tools/distServer.js"
   },
-  "author": "Cory House",
+  "author": "Rambihari",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.18.0",
     "babel-polyfill": "6.8.0",
     "bootstrap": "3.3.6",
     "jquery": "2.2.3",
@@ -22,6 +28,7 @@
     "react-redux": "4.4.5",
     "react-router": "2.4.0",
     "react-router-redux": "4.0.4",
+    "react-select": "^1.2.1",
     "redux": "3.5.2",
     "redux-thunk": "2.0.1",
     "toastr": "2.1.2"
@@ -67,6 +74,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/coryhouse/pluralsight-redux-starter"
+    "url": "https://github.com/rambihari/react-redux-jersey-spring-hibernate-intergration"
   }
 }
