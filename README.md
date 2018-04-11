@@ -17,7 +17,7 @@ This repo contains the unminifed Front-End Source code relating to https://githu
 
 # Setup environment
 
-1. Download and install Node.js from https://nodejs.org/en/download/, which is used to manage our dependencies.
+1. Download and install Node.js from https://nodejs.org/en/download/
 
 2. Navigate to the root directory and run command npm install to install local dependencies listed in package.json.
 
@@ -31,17 +31,18 @@ Open http://localhost:3000 in your browser, and voilà.
 **In order to change the configuration to the dev enviornment which will enable Eslint and hot reloading capabilites**
 * **Navigate to tools directory and open build.js**
    * change the process.env.NODE_ENV = 'dev' variable which is configured to process.env.NODE_ENV = 'prod' <br/>
+
+# Devtools
+   * Eslint is used for Javascript Source linting 
+   * Webppack is used for taskrunning and bundling
    
 **Save File and navigate to the root directory and run command npm start to initiate the dev enviornment**
 
 # Languages & tools
   * **JavaScript** <br/>
     * React is used for UI.
-    * Redux is used to track application state
-    * React-Router is used to navigate in between components
-    * Eslint is used to prevent JavaScript error.
-    * Webppack to allow us to write our client-side scripts with es6 syntax
-    * Express is used for hosting the application
+    * Redux is used to track application state and control application flow
+    * React-Router is used to navigate in between diffrent routes
   * **CSS** <br/>
     * Bootstrap is used for styling components
 
